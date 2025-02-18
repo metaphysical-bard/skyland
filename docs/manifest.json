@@ -1,0 +1,15 @@
+{
+  "name": "skyland",
+  "short_name": "skyland",
+  "start_url": "/skyland/",
+  "scope": "/skyland/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/skyland/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}

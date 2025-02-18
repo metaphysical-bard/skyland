@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on skyland</title>
+    <link>https://metaphysical-bard.github.io/skyland/news/</link>
+    <description>Recent content in News on skyland</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 17 Feb 2025 22:13:47 +0900</lastBuildDate>
+    <atom:link href="https://metaphysical-bard.github.io/skyland/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Releases</title>
+      <link>https://metaphysical-bard.github.io/skyland/news/releases/</link>
+      <pubDate>Mon, 17 Feb 2025 22:13:47 +0900</pubDate>
+      <guid>https://metaphysical-bard.github.io/skyland/news/releases/</guid>
+      <description>&lt;h2 id=&#34;release&#34;&gt;&#xA;  Release&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#release&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;リリース情報とかを載せておきます。&lt;/p&gt;&#xA;&lt;h3 id=&#34;webサイト&#34;&gt;&#xA;  Webサイト&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#web%e3%82%b5%e3%82%a4%e3%83%88&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;2025-02-19 hugoでそれっぽい仕組みを開発。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
