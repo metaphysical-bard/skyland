@@ -1,0 +1,25 @@
+<!--
+
+Hello_World!.html
+  https://developer.mozilla.org/ja/docs/WebAssembly
+  https://webassembly.github.io/wabt/demo/wat2wasm/
+  https://www.npmjs.com/package/wabt
+
+-->
+
+<script src = "https://unpkg.com/wabt@1.0.36/index.js"></script>
+<script src = "cland.js"></script>
+<script src = "bland.js"></script>
+<script src = "skyland_compiler.js"></script>
+<script>
+  let code = 
+`//main function
+main() {
+  log("Hello World!")
+}`
+  const init = (async () => {
+    const sc = await new skyland_compiler()
+    await sc.compile(code)
+  })()
+</script>
+

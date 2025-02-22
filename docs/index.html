@@ -1,4 +1,4 @@
-<!doctype html><html lang=ja dir=ltr><head><meta name=generator content="Hugo 0.143.1"><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+<!doctype html><html lang=ja dir=ltr><head><meta name=generator content="Hugo 0.143.1"><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content='
 
 
   \[
@@ -10,13 +10,116 @@
   これ is 何？
   #
 
+skylandはC++AMPのようにCPUとGPUの処理を同じ文法ルールで記述することができるプログラミング言語です。
+
+
+  Example Code
+  #
+
+//main function
+main() {
+  log("Hello World!")
+}
+//add
+main() {
+  let a = 10
+  let b = 10
+  let c = add(a, b)
+  log(c)
+}
+func(a) {
+  return add(a, 1)
+}
+
+main() {
+  let a = {0, 1, 2, 3}//array type
+  let b = {0, 0, 0, 0}
+  let c = 0
+
+  /* by the CPU */
+  log("CPU : ")
+  for (let i, 4) {
+    c = func(a[i])
+    log(c)
+  }
+
+  log("\n")
+
+  /* by the GPU */
+  log("GPU")
+  ga = setBuf("DST", a)
+  gb = setBuf("SRC")
+  gb = parallel_for_each(4, 1, 1, func, ga)
+  copy(gb, b)
+  for (let i, 4) {
+    log(b[i])
+  }
+}
+
+
+  \(><
+  #
+
 
 現在工事中
 skylandも開発中
 一週間ぐらいで終わらせたい…！！(希望的観測
-"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://metaphysical-bard.github.io/skyland/"><meta property="og:site_name" content="skyland"><meta property="og:title" content="skyland"><meta property="og:description" content="\[ {\color{#5191dd}\Huge\text{skyland}} \] これ is 何？ # 現在工事中 skylandも開発中 一週間ぐらいで終わらせたい…！！(希望的観測"><meta property="og:locale" content="ja"><meta property="og:type" content="website"><title>| skyland</title>
-<link rel=icon href=/skyland/favicon.png><link rel=manifest href=/skyland/manifest.json><link rel=canonical href=https://metaphysical-bard.github.io/skyland/><link rel=stylesheet href=/skyland/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin=anonymous><script defer src=/skyland/fuse.min.js></script><script defer src=/skyland/en.search.min.4c9553bacd584fc0fbb4bfe2872a34a1f6b75bc405d510c84c6ce8dc3ca05956.js integrity="sha256-TJVTus1YT8D7tL/ihyo0ofa3W8QF1RDITGzo3DygWVY=" crossorigin=anonymous></script><link rel=alternate type=application/rss+xml href=https://metaphysical-bard.github.io/skyland/index.xml title=skyland></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/skyland/><span>skyland</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=/skyland/news/>News</a><ul><li><a href=/skyland/news/releases/>Releases</a></li></ul></li><li><a href=/skyland/test/>test</a><ul><li><a href=/skyland/test/hugo%E9%96%A2%E9%80%A3%E3%81%AE%E5%8F%82%E8%80%83%E3%82%B5%E3%82%A4%E3%83%88/>hugo関連の参考サイト</a></li><li><a href=/skyland/test/%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88%E8%A1%A8%E7%A4%BA/>コードのハイライト表示</a></li><li><a href=/skyland/test/logo/>logo</a></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/skyland/svg/menu.svg class=book-icon alt=Menu></label><h3></h3><label for=toc-control><img src=/skyland/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#これ-is-何>これ is 何？</a></li></ul></nav></aside></header><article class="markdown book-article"><link rel=stylesheet href=/skyland/katex/katex.min.css><script defer src=/skyland/katex/katex.min.js></script><script defer src=/skyland/katex/auto-render.min.js onload=renderMathInElement(document.body)></script><span>\[
+
+
+
+  リンク集
+  #
+
+GitHub
+Home Page
+Contact'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://metaphysical-bard.github.io/skyland/"><meta property="og:site_name" content="skyland"><meta property="og:title" content="skyland"><meta property="og:description" content='\[ {\color{#5191dd}\Huge\text{skyland}} \] これ is 何？ # skylandはC++AMPのようにCPUとGPUの処理を同じ文法ルールで記述することができるプログラミング言語です。
+Example Code # //main function main() { log("Hello World!") } //add main() { let a = 10 let b = 10 let c = add(a, b) log(c) } func(a) { return add(a, 1) } main() { let a = {0, 1, 2, 3}//array type let b = {0, 0, 0, 0} let c = 0 /* by the CPU */ log("CPU : ") for (let i, 4) { c = func(a[i]) log(c) } log("\n") /* by the GPU */ log("GPU") ga = setBuf("DST", a) gb = setBuf("SRC") gb = parallel_for_each(4, 1, 1, func, ga) copy(gb, b) for (let i, 4) { log(b[i]) } } \(>< # 現在工事中 skylandも開発中 一週間ぐらいで終わらせたい…！！(希望的観測 リンク集 # GitHub
+Home Page
+Contact'><meta property="og:locale" content="ja"><meta property="og:type" content="website"><title>| skyland</title>
+<link rel=icon href=/skyland/favicon.png><link rel=manifest href=/skyland/manifest.json><link rel=canonical href=https://metaphysical-bard.github.io/skyland/><link rel=stylesheet href=/skyland/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin=anonymous><script defer src=/skyland/fuse.min.js></script><script defer src=/skyland/en.search.min.ea9a8a3171654f3948acd82e1ba79f774dea86548ec01a1025e39099260bb83a.js integrity="sha256-6pqKMXFlTzlIrNguG6efd03qhlSOwBoQJeOQmSYLuDo=" crossorigin=anonymous></script><link rel=alternate type=application/rss+xml href=https://metaphysical-bard.github.io/skyland/index.xml title=skyland></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/skyland/><span>skyland</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=/skyland/news/>News</a><ul><li><a href=/skyland/news/releases/>Releases</a></li></ul></li><li><a href=/skyland/test/>test</a><ul><li><a href=/skyland/test/hugo%E9%96%A2%E9%80%A3%E3%81%AE%E5%8F%82%E8%80%83%E3%82%B5%E3%82%A4%E3%83%88/>hugo関連の参考サイト</a></li><li><a href=/skyland/test/%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88%E8%A1%A8%E7%A4%BA/>コードのハイライト表示</a></li><li><a href=/skyland/test/logo/>logo</a></li></ul></li><li><a href=/skyland/contact/>Contact</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/skyland/svg/menu.svg class=book-icon alt=Menu></label><h3></h3><label for=toc-control><img src=/skyland/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#これ-is-何>これ is 何？</a></li><li><a href=#example-code>Example Code</a></li><li><a href=#heading>\(>&lt;</a></li><li><a href=#リンク集>リンク集</a></li></ul></nav></aside></header><article class="markdown book-article"><link rel=stylesheet href=/skyland/katex/katex.min.css><script defer src=/skyland/katex/katex.min.js></script><script defer src=/skyland/katex/auto-render.min.js onload=renderMathInElement(document.body)></script><span>\[
 {\color{#5191dd}\Huge\text{skyland}}
 \]</span><h2 id=これ-is-何>これ is 何？
-<a class=anchor href=#%e3%81%93%e3%82%8c-is-%e4%bd%95>#</a></h2><ul><li>現在工事中</li><li>skylandも開発中</li><li>一週間ぐらいで終わらせたい…！！(希望的観測</li></ul></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#これ-is-何>これ is 何？</a></li></ul></nav></div></aside></main></body></html>
+<a class=anchor href=#%e3%81%93%e3%82%8c-is-%e4%bd%95>#</a></h2><p><code>skyland</code>は<a href="https://learn.microsoft.com/ja-jp/cpp/parallel/amp/cpp-amp-overview?view=msvc-170">C++AMP</a>のようにCPUとGPUの処理を同じ文法ルールで記述することができるプログラミング言語です。</p><br><h2 id=example-code>Example Code
+<a class=anchor href=#example-code>#</a></h2><pre tabindex=0><code class=language-sland data-lang=sland>//main function
+main() {
+  log(&#34;Hello World!&#34;)
+}
+</code></pre><pre tabindex=0><code class=language-sland data-lang=sland>//add
+main() {
+  let a = 10
+  let b = 10
+  let c = add(a, b)
+  log(c)
+}
+</code></pre><pre tabindex=0><code class=language-sland data-lang=sland>func(a) {
+  return add(a, 1)
+}
+
+main() {
+  let a = {0, 1, 2, 3}//array type
+  let b = {0, 0, 0, 0}
+  let c = 0
+
+  /* by the CPU */
+  log(&#34;CPU : &#34;)
+  for (let i, 4) {
+    c = func(a[i])
+    log(c)
+  }
+
+  log(&#34;\n&#34;)
+
+  /* by the GPU */
+  log(&#34;GPU&#34;)
+  ga = setBuf(&#34;DST&#34;, a)
+  gb = setBuf(&#34;SRC&#34;)
+  gb = parallel_for_each(4, 1, 1, func, ga)
+  copy(gb, b)
+  for (let i, 4) {
+    log(b[i])
+  }
+}
+</code></pre><br><h2 id=heading>\(>&lt;
+<a class=anchor href=#heading>#</a></h2><ul><li>現在工事中</li><li>skylandも開発中</li><li>一週間ぐらいで終わらせたい…！！(希望的観測</li></ul><br><h2 id=リンク集>リンク集
+<a class=anchor href=#%e3%83%aa%e3%83%b3%e3%82%af%e9%9b%86>#</a></h2><p><a href=https://github.com/metaphysical-bard/skyland>GitHub</a><br><a href=https://metaphysical-bard.github.io/skyland/>Home Page</a><br><a href=https://metaphysical-bard.github.io/skyland/contact/>Contact</a><br></p><script type=text/javascript>let list=document.body.getElementsByClassName("language-sland");for(let e=0;e<list.length;e++){let t=list[e].innerText;list[e].innerHTML=t.replace(/(".+"|[0-9])/gu,'<span style="color:#f1ab25">$1</span>').replace(/([^\s]+)\(/gu,'<span style="color:#36a9ef">$1</span>(').replace(/(\s+let|\s+if|\s+for|\s+return)/gu,'<span style="color:#ce3c30">$1</span>').replace(/(\/\/[^<]*|\/\*.*\*\/)/gu,'<span style="color:#82a738">$1</span>')}</script></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#これ-is-何>これ is 何？</a></li><li><a href=#example-code>Example Code</a></li><li><a href=#heading>\(>&lt;</a></li><li><a href=#リンク集>リンク集</a></li></ul></nav></div></aside></main></body></html>

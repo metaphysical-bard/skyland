@@ -3,8 +3,144 @@
  &lt;a class="anchor" href="#release">#&lt;/a>
 &lt;/h2>
 &lt;p>リリース情報とかを載せておきます。&lt;/p>
-&lt;h3 id="webサイト">
- Webサイト
- &lt;a class="anchor" href="#web%e3%82%b5%e3%82%a4%e3%83%88">#&lt;/a>
+&lt;br>
+&lt;h3 id="skyland">
+ skyland
+ &lt;a class="anchor" href="#skyland">#&lt;/a>
 &lt;/h3>
-&lt;p>2025-02-19 hugoでそれっぽい仕組みを開発。&lt;/p></description></item></channel></rss>
+&lt;p>&lt;code>skyland&lt;/code>は&lt;code>bland.js&lt;/code>などのプロジェクトの総称です。&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">DATA&lt;/th>
+ &lt;th style="text-align: left">VERSION&lt;/th>
+ &lt;th style="text-align: left">INFO&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-02-22&lt;/td>
+ &lt;td style="text-align: left">0.1&lt;/td>
+ &lt;td style="text-align: left">・&amp;ldquo;Hello World!&amp;ldquo;を実行するための簡易実装&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;br>
+&lt;h3 id="skyland-compiler">
+ skyland compiler
+ &lt;a class="anchor" href="#skyland-compiler">#&lt;/a>
+&lt;/h3>
+&lt;p>&lt;code>.sland&lt;/code>をコンパイルして実行することができます。&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">DATA&lt;/th>
+ &lt;th style="text-align: left">VERSION&lt;/th>
+ &lt;th style="text-align: left">TARGET&lt;/th>
+ &lt;th style="text-align: left">INFO&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-02-22&lt;/td>
+ &lt;td style="text-align: left">0.1&lt;/td>
+ &lt;td style="text-align: left">0.1&lt;/td>
+ &lt;td style="text-align: left">・&amp;ldquo;Hello World!&amp;ldquo;のコンパイル専用&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;br>
+&lt;h3 id="blandjs">
+ bland.js
+ &lt;a class="anchor" href="#blandjs">#&lt;/a>
+&lt;/h3>
+&lt;p>&lt;code>.sland&lt;/code>コードを独自のツリー構造を持ったJavaScript Objectに変換します。&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">DATA&lt;/th>
+ &lt;th style="text-align: left">VERSION&lt;/th>
+ &lt;th style="text-align: left">TARGET&lt;/th>
+ &lt;th style="text-align: left">INFO&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-02-22&lt;/td>
+ &lt;td style="text-align: left">0.1&lt;/td>
+ &lt;td style="text-align: left">0.1&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;br>
+&lt;h3 id="clandjs">
+ cland.js
+ &lt;a class="anchor" href="#clandjs">#&lt;/a>
+&lt;/h3>
+&lt;p>&lt;code>bland.js&lt;/code>によって生成されたJavaScript Objectから&lt;code>.wat&lt;/code>コードに変換します。&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">DATA&lt;/th>
+ &lt;th style="text-align: left">VERSION&lt;/th>
+ &lt;th style="text-align: left">TARGET&lt;/th>
+ &lt;th style="text-align: left">INFO&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-02-22&lt;/td>
+ &lt;td style="text-align: left">0.1&lt;/td>
+ &lt;td style="text-align: left">0.1&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;br>
+&lt;h3 id="glandjs">
+ gland.js
+ &lt;a class="anchor" href="#glandjs">#&lt;/a>
+&lt;/h3>
+&lt;p>&lt;code>bland.js&lt;/code>によって生成されたJavaScript Objectから&lt;code>.wgsl&lt;/code>コードに変換します。&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">DATA&lt;/th>
+ &lt;th style="text-align: left">VERSION&lt;/th>
+ &lt;th style="text-align: left">TARGET&lt;/th>
+ &lt;th style="text-align: left">INFO&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;td style="text-align: left">-&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;br>
+&lt;h3 id="web-site">
+ Web Site
+ &lt;a class="anchor" href="#web-site">#&lt;/a>
+&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">DATA&lt;/th>
+ &lt;th style="text-align: left">INFO&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-02-19&lt;/td>
+ &lt;td style="text-align: left">・hugoでそれっぽい仕組みを開発&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-02-22&lt;/td>
+ &lt;td style="text-align: left">・skylandの実装に合わせてサイトも更新&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item></channel></rss>

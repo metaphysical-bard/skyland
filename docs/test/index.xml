@@ -70,6 +70,7 @@ test5
  &lt;a class="anchor" href="#logo">#&lt;/a>
 &lt;/h2>
 &lt;p>logoってどうしよ&lt;/p>
+&lt;br>
 &lt;h3 id="案1">
  案1
  &lt;a class="anchor" href="#%e6%a1%881">#&lt;/a>
@@ -79,6 +80,7 @@ test5
 &lt;li>プレーンテキスト最強。&lt;/li>
 &lt;li>でもやっぱぁロゴほしいいいいいいい&lt;/li>
 &lt;/ul>
+&lt;br>
 &lt;h3 id="案2">
  案2
  &lt;a class="anchor" href="#%e6%a1%882">#&lt;/a>
@@ -98,6 +100,7 @@ test5
 \]
 &lt;/span>
 &lt;/p>
+&lt;br>
 &lt;h3 id="案3">
  案3
  &lt;a class="anchor" href="#%e6%a1%883">#&lt;/a>
