@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>skyland</title><link>https://metaphysical-bard.github.io/skyland/</link><description>Recent content on skyland</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Wed, 19 Feb 2025 10:41:21 +0900</lastBuildDate><atom:link href="https://metaphysical-bard.github.io/skyland/index.xml" rel="self" type="application/rss+xml"/><item><title>Releases</title><link>https://metaphysical-bard.github.io/skyland/news/releases/</link><pubDate>Mon, 17 Feb 2025 22:13:47 +0900</pubDate><guid>https://metaphysical-bard.github.io/skyland/news/releases/</guid><description>&lt;h2 id="release">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>skyland</title><link>https://metaphysical-bard.github.io/skyland/</link><description>Recent content on skyland</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sat, 22 Feb 2025 18:21:44 +0900</lastBuildDate><atom:link href="https://metaphysical-bard.github.io/skyland/index.xml" rel="self" type="application/rss+xml"/><item><title>Releases</title><link>https://metaphysical-bard.github.io/skyland/news/releases/</link><pubDate>Mon, 17 Feb 2025 22:13:47 +0900</pubDate><guid>https://metaphysical-bard.github.io/skyland/news/releases/</guid><description>&lt;h2 id="release">
  Release
  &lt;a class="anchor" href="#release">#&lt;/a>
 &lt;/h2>
@@ -142,8 +142,97 @@
  &lt;td style="text-align: left">2025-02-22&lt;/td>
  &lt;td style="text-align: left">・skylandの実装に合わせてサイトも更新&lt;/td>
  &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-02-25&lt;/td>
+ &lt;td style="text-align: left">・エディタを作ったのでその分の更新。hugoへの埋め込みは後手。&lt;/td>
+ &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Contact</title><link>https://metaphysical-bard.github.io/skyland/contact/</link><pubDate>Wed, 19 Feb 2025 10:41:21 +0900</pubDate><guid>https://metaphysical-bard.github.io/skyland/contact/</guid><description>&lt;h2 id="contact">
+&lt;/table></description></item><item><title>editor</title><link>https://metaphysical-bard.github.io/skyland/test/editor/</link><pubDate>Sat, 22 Feb 2025 18:21:44 +0900</pubDate><guid>https://metaphysical-bard.github.io/skyland/test/editor/</guid><description>&lt;h2 id="editor">
+ editor
+ &lt;a class="anchor" href="#editor">#&lt;/a>
+&lt;/h2>
+&lt;p>専用のエディタがあると便利ですよね&lt;br>
+↓&lt;br>
+↓&lt;br>
+↓&lt;br>
+&lt;br>&lt;br>
+&lt;strong>作りましたぁぁあ&lt;/strong>&lt;/p>
+&lt;a href="https://github.com/metaphysical-bard/skyland/blob/main/src/editor.html" target="_blank" rel="noopener" class="book-btn">Editor Code&lt;/a>
+
+&lt;p>&lt;br>&lt;br>
+&lt;br>&lt;br>
+&lt;br>&lt;br>&lt;/p>
+&lt;p>実は、ショートコードへの埋め込みを想定しているのですが。。。。&lt;br>
+cdnサービスの登録とかめんどうなので後手です(&amp;gt;&amp;lt;)
+あと、hugo-book-themeで&lt;code>s&lt;/code>キーにショートカットが設定されているっぽい？上書きしたいね。
+&lt;br>&lt;br>
+↓こんなかんじ&lt;/p>
+&lt;pre class = "skylandEditor">//main function
+main() {
+ log("Hello World!")
+}
+&lt;/pre>
+&lt;p>&lt;a class = "book-btn link-non">Compile&lt;/a>&lt;/p>
+&lt;pre class = "skylandConsole">Push Compile Button&lt;/pre>
+&lt;script src = "https://unpkg.com/wabt@1.0.36/index.js">&lt;/script>
+
+&lt;script type="text/javascript">
+ let list = document.body.getElementsByClassName("skylandEditor")
+ let con = document.body.getElementsByClassName("skylandConsole")
+
+ for (let i = 0; i &lt; list.length; i++) {
+ let str = list[i].innerText
+ list[i].contentEditable = "true"
+ list[i].addEventListener("keydown", (event) => {
+ if (event.key === "s") {
+ event.preventDefault()
+ }
+ })
+ 
+ list[i].style.height = "30em"
+
+ list[i].innerHTML = (str + "\n")
+ .replace(/(".+"|[0-9])/gu, "&lt;span class=\"const\">$1&lt;/span>")
+ 
+ .replace(/([^\s]+)\(/gu, "&lt;span class=\"func\">$1&lt;/span>(")
+ 
+ .replace(/(.+)\n/gu, "&lt;div>$1&lt;/div>")
+ .replace(/\n\n/gu, "&lt;div>&lt;br>&lt;/div>")
+ .replace(/\n/gu, "")
+ 
+ .replace(/(\s+let|\s+if|\s+for|\s+return)/gu, "&lt;span class=\"key\">$1&lt;/span>")
+ 
+ .replace(/(\/\/[^&lt;]*|\/\*.*\*\/)/gu, "&lt;span class=\"comment\">$1&lt;/span>")
+ 
+ }
+&lt;/script>
+
+&lt;style type="text/css">
+ .skylandEditor {
+ cursor: default;
+ caret-color: var(--body-font-color);
+ user-select:none;
+ -webkit-user-select:none;
+ -ms-user-select: none;
+ -moz-user-select: none;
+ -khtml-user-select: none;
+ -webkit-user-drag: none;
+ -khtml-user-drag: none;
+ }
+
+ .skylandEditor * {
+ cursor: text;
+ }
+
+ .skylandEditor .const { color: #f1ab25; }
+ .skylandEditor .func { color: #36a9ef; }
+ .skylandEditor .key { color: #ce3c30; }
+ .skylandEditor .comment { color: #82a738; }
+
+ a.link-non {
+ pointer-events: none;
+ }
+&lt;/style></description></item><item><title>Contact</title><link>https://metaphysical-bard.github.io/skyland/contact/</link><pubDate>Wed, 19 Feb 2025 10:41:21 +0900</pubDate><guid>https://metaphysical-bard.github.io/skyland/contact/</guid><description>&lt;h2 id="contact">
  Contact
  &lt;a class="anchor" href="#contact">#&lt;/a>
 &lt;/h2>

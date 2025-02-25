@@ -1,0 +1,47 @@
+<!--
+
+index.html
+https://metaphysical-bard.github.io/skyland/test/editor
+
+-->
+
+<!DOCTYPE html>
+<html lang = "ja">
+  <head>
+    <title>skyland editor</title>
+    <meta charset="UTF-8">
+    <script src = "https://unpkg.com/wabt@1.0.36/index.js"></script>
+    <script src = "cland.js"></script>
+    <script src = "bland.js"></script>
+    <script src = "skyland_compiler.js"></script>
+    <script src = "editor/range_M.js"></script>
+    <script src = "editor/editor_M.js"></script>
+    <script src = "editor/console_M.js"></script>
+    <style type="text/css">
+      pre {
+        cursor: default;
+        caret-color: #000000;
+        user-select:none;
+        -webkit-user-select:none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+      }
+    
+      pre * {
+        cursor: text;
+      }
+    
+      pre .const { color: #f1ab25; }
+      pre .func { color: #36a9ef; }
+      pre .key { color: #ce3c30; }
+      pre .comment { color: #82a738; }
+    </style>
+  </head>
+  <body>
+    <script src = "editor/index.js"></script>
+  </body>
+</html>
+
