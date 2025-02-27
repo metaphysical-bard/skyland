@@ -1,0 +1,24 @@
+<!--
+
+test.html
+
+-->
+
+<script src = "https://unpkg.com/wabt@1.0.36/index.js"></script>
+<script src = "cland.js"></script>
+<script src = "bland.js"></script>
+<script src = "skyland_compiler.js"></script>
+<script>
+  let code = 
+`//=main function
+main() {
+  log("Hello World!")
+}`
+  let b = new bland()
+  console.log(b.convert(code))
+  /*const init = (async () => {
+    const sc = await new skyland_compiler()
+    await sc.compile(code)
+  })()*/
+</script>
+
